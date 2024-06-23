@@ -1,3 +1,4 @@
+```markdown
 # Language Nexus
 
 Welcome to Language Nexus, your one-stop solution for translation needs! This application is built using Streamlit and provides multiple features such as translation, dyslexia-friendly text conversion, and word cloud generation.
@@ -20,6 +21,8 @@ Welcome to Language Nexus, your one-stop solution for translation needs! This ap
 
 1. **Clone the repository**:
     ```sh
+    git clone https://github.com/VishnuSwaroop-PS/LanguageNexus.git
+    cd LanguageNexus
     git clone https://github.com/VishnuSwaroop-PS/LanguageNexus.git
     cd LanguageNexus
     ```
@@ -93,6 +96,10 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Screenshots
+
+![Language Nexus Screenshot](images/screenshot.png)
 
 ## Contact
 
