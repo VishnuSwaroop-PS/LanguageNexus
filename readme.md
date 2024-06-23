@@ -77,7 +77,7 @@ Welcome to Language Nexus, your one-stop solution for translation needs! This ap
 
 ## Example Screenshots
 
-![Language Nexus Screenshot](images\trans.png)
+![Language Nexus Screenshot](images/trans.png)
 
 ## Contributing
 
