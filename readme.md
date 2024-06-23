@@ -40,6 +40,16 @@ Welcome to Language Nexus, your one-stop solution for translation needs! This ap
     streamlit run translator.py
     ```
 
+## Dependencies
+
+- `streamlit==1.5.0`
+- `Pillow==9.0.0`
+- `gtts==2.2.2`
+- `googletrans==4.0.0-rc1`
+- `numpy==1.22.0`
+- `wordcloud==1.8.1`
+- `matplotlib==3.5.1`
+
 ## File Structure
 
 - `translator.py`: The main source code file containing the implementation of the Language Nexus application.
@@ -67,7 +77,7 @@ Welcome to Language Nexus, your one-stop solution for translation needs! This ap
 
 ## Example Screenshots
 
-![Language Nexus Screenshot](https://github.com/VishnuSwaroop-PS/LanguageNexus/blob/main/images/language_nexus_screenshot.png)
+![Language Nexus Screenshot](https://github.com/VishnuSwaroop-PS/LanguageNexus/blob/main/images/trans.png)
 
 ## Contributing
 
@@ -93,12 +103,3 @@ Thank you for using Language Nexus!
 
 ---
 
-### Dependencies
-
-- `streamlit==1.5.0`
-- `Pillow==9.0.0`
-- `gtts==2.2.2`
-- `googletrans==4.0.0-rc1`
-- `numpy==1.22.0`
-- `wordcloud==1.8.1`
-- `matplotlib==3.5.1`
