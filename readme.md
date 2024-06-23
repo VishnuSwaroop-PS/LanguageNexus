@@ -1,4 +1,3 @@
-```markdown
 # Language Nexus
 
 Welcome to Language Nexus, your one-stop solution for translation needs! This application is built using Streamlit and provides multiple features such as translation, dyslexia-friendly text conversion, and word cloud generation.
@@ -21,8 +20,6 @@ Welcome to Language Nexus, your one-stop solution for translation needs! This ap
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/VishnuSwaroop-PS/LanguageNexus.git
-    cd LanguageNexus
     git clone https://github.com/VishnuSwaroop-PS/LanguageNexus.git
     cd LanguageNexus
     ```
@@ -68,17 +65,6 @@ Welcome to Language Nexus, your one-stop solution for translation needs! This ap
 1. Enter the text for which you want to generate a word cloud.
 2. Click the "Generate Word Cloud" button to see the word cloud visualization.
 
-
-### Dependencies
-
-- `streamlit==1.5.0`
-- `Pillow==9.0.0`
-- `gtts==2.2.2`
-- `googletrans==4.0.0-rc1`
-- `numpy==1.22.0`
-- `wordcloud==1.8.1`
-- `matplotlib==3.5.1`
-
 ## Example Screenshots
 
 ![Language Nexus Screenshot](https://github.com/VishnuSwaroop-PS/LanguageNexus/blob/main/images/language_nexus_screenshot.png)
@@ -97,10 +83,6 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-## Screenshots
-
-![Language Nexus Screenshot](images/screenshot.png)
-
 ## Contact
 
 For any questions or suggestions, feel free to contact me at example@example.com.
@@ -110,3 +92,13 @@ For any questions or suggestions, feel free to contact me at example@example.com
 Thank you for using Language Nexus!
 
 ---
+
+### Dependencies
+
+- `streamlit==1.5.0`
+- `Pillow==9.0.0`
+- `gtts==2.2.2`
+- `googletrans==4.0.0-rc1`
+- `numpy==1.22.0`
+- `wordcloud==1.8.1`
+- `matplotlib==3.5.1`
