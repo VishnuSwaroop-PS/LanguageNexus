@@ -1,3 +1,4 @@
+```markdown
 # Language Nexus
 
 Language Nexus is a Streamlit-based web application that provides a variety of language-related functionalities, including translation, dyslexia-friendly text conversion, and word cloud generation. This application aims to make language translation and accessibility easy and efficient.
@@ -23,8 +24,8 @@ pip install -r requirements.txt
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/VishnuSwaroop-PS/Language-Nexus.git
-    cd Language-Nexus
+    git clone https://github.com/VishnuSwaroop-PS/LanguageNexus.git
+    cd LanguageNexus
     ```
 
 2. **Create a virtual environment**:
@@ -82,6 +83,10 @@ The application requires the following Python libraries:
 
 These dependencies can be installed using the `requirements.txt` file provided.
 
+## Screenshots
+
+![Language Nexus Screenshot](images/screenshot.png)
+
 ## Contact
 
 For any questions or suggestions, feel free to reach out to us at example@example.com.
@@ -89,3 +94,4 @@ For any questions or suggestions, feel free to reach out to us at example@exampl
 ---
 
 Thank you for using Language Nexus!
+```
