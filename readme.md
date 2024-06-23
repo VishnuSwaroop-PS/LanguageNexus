@@ -95,7 +95,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## Contact
 
-For any questions or suggestions, feel free to contact me at example@example.com.
+For any questions or suggestions, feel free to contact me at https://www.linkedin.com/in/vishnu-swaroop-p-s-64590b1ab/.
 
 ---
 
