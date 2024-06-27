@@ -1,6 +1,6 @@
 # Language Nexus
 
-Welcome to Language Nexus, your one-stop solution for translation needs! This application is built using Streamlit and provides multiple features such as translation, dyslexia-friendly text conversion, and word cloud generation.
+Welcome to [Language Nexus](https://languagenexus-12345678.streamlit.app/), your one-stop solution for translation needs! This application is built using Streamlit and provides multiple features such as translation, dyslexia-friendly text conversion, and word cloud generation.
 
 ## Features
 
@@ -42,13 +42,13 @@ Welcome to Language Nexus, your one-stop solution for translation needs! This ap
 
 ## Dependencies
 
-- `streamlit==1.5.0`
-- `Pillow==9.0.0`
-- `gtts==2.2.2`
+- `streamlit
+- `Pillow
+- `gtts
 - `googletrans==4.0.0-rc1`
-- `numpy==1.22.0`
-- `wordcloud==1.8.1`
-- `matplotlib==3.5.1`
+- `numpy
+- `wordcloud
+- `matplotlib
 
 ## File Structure
 
@@ -77,16 +77,16 @@ Welcome to Language Nexus, your one-stop solution for translation needs! This ap
 
 ## Example Screenshots
 
-## Translate Page
+### Translate Page
 ![Translate Page](images/Translate.png)
 
-## Dyslexia Page
+### Dyslexia Page
 ![Dyslexia Page](images/Dyslexia.png)
 
-## Word Cloud Page
+### Word Cloud Page
 ![Word Cloud Page](images/WordCloud.png)
 
-## About Us Page
+### About Us Page
 ![About Us Page](images/AboutUs.png)
 
 ## Contributing
@@ -105,11 +105,10 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## Contact
 
-For any questions or suggestions, feel free to contact me at https://www.linkedin.com/in/vishnu-swaroop-p-s-64590b1ab/.
+For any questions or suggestions, feel free to contact me at [LinkedIn](https://www.linkedin.com/in/vishnu-swaroop-p-s-64590b1ab/).
 
 ---
 
 Thank you for using Language Nexus!
 
 ---
-
