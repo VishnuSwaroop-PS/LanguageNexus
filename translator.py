@@ -7,6 +7,7 @@ from googletrans import Translator
 import numpy as np
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
+from langdetect import detect as lang_detect
 
 def get_key(val):
     """function to find the key of the given value in the dict object
@@ -93,42 +94,60 @@ def translate_page(langs, trans):
         else:
             detect_expander = st.expander("Detected Language")
             with detect_expander:
-                detect = trans.detect([input_text])[0]  # detect the user given text language
-                detect_text = f"Detected Language : {langs[detect.lang]}"
-                st.success(detect_text)  # displays the detected language
+                try:
+                    detect = trans.detect([input_text])[0]  # detect the user given text language
+                    detect_text = f"Detected Language : {langs[detect.lang]}"
+                    st.success(detect_text)  # displays the detected language
 
-                # convert the detected text to audio file
-                detect_audio = gTTS(text=input_text, lang=detect.lang, slow=False)
-                detect_audio.save("user_detect.mp3")
-                audio_file = open("user_detect.mp3", "rb")
-                audio_bytes = audio_file.read()
-                st.audio(audio_bytes, format="audio/ogg", start_time=0)
+                    # convert the detected text to audio file
+                    detect_audio = gTTS(text=input_text, lang=detect.lang, slow=False)
+                    detect_audio.save("user_detect.mp3")
+                    audio_file = open("user_detect.mp3", "rb")
+                    audio_bytes = audio_file.read()
+                    st.audio(audio_bytes, format="audio/ogg", start_time=0)
+                except Exception as e:
+                    try:
+                        detected_lang = lang_detect(input_text)
+                        detect_text = f"Detected Language (Fallback): {langs[detected_lang]}"
+                        st.success(detect_text)  # displays the detected language
+
+                        # convert the detected text to audio file
+                        detect_audio = gTTS(text=input_text, lang=detected_lang, slow=False)
+                        detect_audio.save("user_detect.mp3")
+                        audio_file = open("user_detect.mp3", "rb")
+                        audio_bytes = audio_file.read()
+                        st.audio(audio_bytes, format="audio/ogg", start_time=0)
+                    except Exception as fallback_error:
+                        st.error(f"Error detecting language with fallback: {fallback_error}")
 
             trans_expander = st.expander("Translated Text")
             with trans_expander:
-                translation = trans.translate(
-                    input_text, dest=get_key(lang_choice)
-                )  # translates user given text to target language
-                translation_text = f"Translated Text : {translation.text}"
-                st.success(translation_text)  # displays the translated text
+                try:
+                    translation = trans.translate(
+                        input_text, dest=get_key(lang_choice)
+                    )  # translates user given text to target language
+                    translation_text = f"Translated Text : {translation.text}"
+                    st.success(translation_text)  # displays the translated text
 
-                # convert the translated text to audio file
-                translated_audio = gTTS(
-                    text=translation.text, lang=get_key(lang_choice), slow=False
-                )
-                translated_audio.save("user_trans.mp3")
-                audio_file = open("user_trans.mp3", "rb")
-                audio_bytes = audio_file.read()
-                st.audio(audio_bytes, format="audio/ogg", start_time=0)
-
-                # download button to download translated audio file
-                with open("user_trans.mp3", "rb") as file:
-                    st.download_button(
-                        label="Download",
-                        data=file,
-                        file_name="trans.mp3",
-                        mime="audio/ogg",
+                    # convert the translated text to audio file
+                    translated_audio = gTTS(
+                        text=translation.text, lang=get_key(lang_choice), slow=False
                     )
+                    translated_audio.save("user_trans.mp3")
+                    audio_file = open("user_trans.mp3", "rb")
+                    audio_bytes = audio_file.read()
+                    st.audio(audio_bytes, format="audio/ogg", start_time=0)
+
+                    # download button to download translated audio file
+                    with open("user_trans.mp3", "rb") as file:
+                        st.download_button(
+                            label="Download",
+                            data=file,
+                            file_name="trans.mp3",
+                            mime="audio/ogg",
+                        )
+                except Exception as e:
+                    st.error(f"Error translating text: {e}")
 
 def dyslexia_page():
     st.title("Dyslexia Text Conversion App")
@@ -197,6 +216,5 @@ def about_us_page():
     st.write("Feel free to reach out to us at example@example.com with any questions, feedback, or suggestions. We're here to make your translation journey simple and enjoyable.")
     st.write("")
     st.write("Thank you for choosing Language Nexus.")
-
 if __name__ == "__main__":
     main()  # calls the main() first
