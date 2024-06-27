@@ -2,6 +2,10 @@
 
 Welcome to [Language Nexus](https://languagenexus-12345678.streamlit.app/), your one-stop solution for translation needs! This application is built using Streamlit and provides multiple features such as translation, dyslexia-friendly text conversion, and word cloud generation.
 
+## Live Demo
+
+Check out the live demo of Language Nexus deployed on Streamlit: [Language Nexus Live Demo](https://languagenexus-12345678.streamlit.app/)
+
 ## Features
 
 1. **Translate**: Translate text between different languages using Google Translate API. It also provides audio for both the original and translated text.
