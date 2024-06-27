@@ -77,7 +77,17 @@ Welcome to Language Nexus, your one-stop solution for translation needs! This ap
 
 ## Example Screenshots
 
-![Language Nexus Screenshot](images/Translate.png)
+## Translate Page
+![Translate Page](images/Translate.png)
+
+## Dyslexia Page
+![Dyslexia Page](images/Dyslexia.png)
+
+## Word Cloud Page
+![Word Cloud Page](images/WordCloud.png)
+
+## About Us Page
+![About Us Page](images/AboutUs.png)
 
 ## Contributing
 
