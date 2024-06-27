@@ -1,7 +1,8 @@
-streamlit==1.5.0
-Pillow==9.0.0
-gtts==2.2.2
+streamlit
+Pillow
+gtts
 googletrans==4.0.0-rc1
-numpy==1.22.0
-wordcloud==1.8.1
-matplotlib==3.5.1
+langdetect
+numpy
+wordcloud
+matplotlib
